@@ -15,7 +15,7 @@ int first(int arr[], int n, int i, int k){
 }
 
 int last(int arr[], int n, int i, int k){
-    if(i==n){
+    if(i==-1){
         return -1;
     }
 
