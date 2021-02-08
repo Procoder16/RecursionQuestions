@@ -12,7 +12,10 @@ int knapsack(int value[], int wt[], int n, int W){
     }
 
     else{
-        return max(knapsack(value, wt,n-1, W-wt[n-1]) + value[n-1], knapsack(value, wt, n-1, W));
+
+        int added = knapsack(value, wt,n-1, W-wt[n-1]) + value[n-1];
+        int notadded = knapsack(value, wt, n-1, W);
+        return max(added, notadded);
     }
 }
 
