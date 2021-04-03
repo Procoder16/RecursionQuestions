@@ -9,7 +9,7 @@ bool sorted(int arr[], int n){
     }
 
     else{
-        return (arr[0]<arr[1] && sorted(arr+1, n-1));
+        return (arr[0]<arr[1] && sorted(arr+1, n-1));           
     }
 }
 
